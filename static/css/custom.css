@@ -1,0 +1,48 @@
+/* Adjust the main title (post titles) */
+.post-item h2 a {
+    font-size: 1.75rem; /* Increase title font size */
+    font-weight: bold;
+    color: #1a202c; /* Adjust to a darker color */
+}
+
+.post-item h2 a:hover {
+    color: #007bff; /* Subtle hover effect */
+}
+
+/* Adjust post metadata (date) */
+.post-meta {
+    font-size: 0.875rem;
+    color: #6b7280; /* Slightly darker gray for date */
+    margin-bottom: 0.5rem;
+}
+
+/* Adjust post summary text */
+.post-summary p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a5568; /* Adjust text color for readability */
+}
+
+/* Adjust Read More link */
+.read-more {
+    font-size: 1rem;
+    color: #1a73e8; /* Match the green shade for a more cohesive look */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Adjust spacing and borders */
+.post-item {
+    margin-bottom: 2rem; /* Increase space between posts */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0; /* Subtle bottom border for separation */
+}
+
+/* Remove extra padding/margins from the header and description */
+header, .description {
+    margin-bottom: 1rem; /* Reduce spacing around header/description */
+}
