@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="post-list">
+  <h1>All Posts</h1>
+  <ul>
+    {{ range .Site.RegularPages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p>{{ .Summary }}</p>
+      <small>Posted on {{ .Date.Format "Jan 2, 2006" }}</small>
+      <br />
+      {{ with .Params.tags }}
+      <span>Tags:
+        {{ range $index, $tag := . }}
+          {{ if $index }}, {{ end }}{{ $tag }}
+        {{ end }}
+      </span>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
